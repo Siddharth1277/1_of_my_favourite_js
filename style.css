@@ -1,0 +1,121 @@
+@import url('https://fontd.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: steelblue;
+    color: #fff;
+    font-family: 'Muli' , sans-serif;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    /* background-image: linear-gradient(blue, green); */
+    /* background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 255)); */
+    /* background-image: repeating-linear-gradient(red,blue.5%, green 10%); */
+
+
+    /* background-image: radial-gradient(red,yellow, green); */
+    /* background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black); */
+    /* background-image: repeating-radial-gradient(red, yellow 10%, green 15%); */
+
+
+    /* background-image: conic-gradient(red, yellow , green); */
+    /* background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg); */
+    /* background-image: conic-gradient(from 90deg, red, yellow, green); */
+    /* background-image: repeating-conic-gradient(red 10%, yellow 20%); */
+    /* border: 15px solid black; */
+    
+}
+.container {
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 40px;
+    border-radius: 5px;
+    left      : 50%;
+    top       : 50%;
+    position  : absolute;
+    transform : translate(-50%, -50%);
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px black inset;
+    /* box-shadow: 10px 10px 15px black; */
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container a{
+    text-decoration: none;
+    color: lightblue;
+}
+
+.btn{
+    cursor: pointer ;
+    display: inline-block;
+    width: 100%;
+    background: lightblue;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:active{
+    transform: scale(0.95);
+}
+
+.text{
+    margin-top: 30px;
+}
+
+.form-control{
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.form-control input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.form-control label span{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: .3s cubic-bezier(.68, -.55, .265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: lightblue;
+    transform: translateY(-30px);
+}
